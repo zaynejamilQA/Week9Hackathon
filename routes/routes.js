@@ -35,8 +35,8 @@ ROUTER.get("/getById/:id", async (req, res) => {
 ROUTER.put('/update/:id', (req, res) => {
     const id = req.params.id;
     console.log('id: ', id);
-    const name = req.body.name;
-    const price = req.body.price;
+    const name = "apple";
+    const price = 0.99;
     const updatedProduct = new PRODUCT({ name, price });
 
     updatedProduct
